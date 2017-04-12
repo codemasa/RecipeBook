@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>RecipeType</key>
+		<string>Chicken</string>
+		<key>RecipeDetails</key>
+		<dict>
+			<key>Recipe</key>
+			<dict>
+				<key>RecipeName</key>
+				<string>Teriyaki Chicken</string>
+				<key>Ingredients</key>
+				<array>
+					<string>1 Chicken Breast</string>
+					<string>1 Cup Low Sodium Soy Sauce</string>
+					<string>1/4 Cup Sugar</string>
+					<string>2 tbsp Gochujang Paste</string>
+					<string>1 tbsp Sesame Oil</string>
+				</array>
+				<key>Instructions</key>
+				<array>
+					<string>Dice chicken and put in zip lock bag</string>
+					<string>Add soy sauce, sugar, gochujang paste, and sesame oil to bag</string>
+					<string>Mix the contents of the bag thoroughly</string>
+					<string>Heat pan on medium heat</string>
+					<string>Empty contents of bag into pan</string>
+				</array>
+				<key>NutritionFacts</key>
+				<dict>
+					<key>Carbohydrates</key>
+					<string>20g</string>
+					<key>Protein</key>
+					<string>44g</string>
+					<key>Fat</key>
+					<string>5g</string>
+				</dict>
+				<key>Media</key>
+				<array>
+					<string>teriyaki1</string>
+					<string>teriyaki2</string>
+				</array>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>RecipeType</key>
+		<string>Beef</string>
+		<key>RecipeDetails</key>
+		<dict>
+			<key>Recipe</key>
+			<dict>
+				<key>RecipeName</key>
+				<string>Steak</string>
+				<key>Ingredients</key>
+				<array>
+					<string>1 T-Bone Steak</string>
+					<string>2 tbsp Garlic Butter</string>
+					<string>2 Sprigs Thyme</string>
+				</array>
+				<key>Instructions</key>
+				<array>
+					<string>Season steak with salt and pepper</string>
+					<string>Melt butter in cast iron skillet until slightly foaming</string>
+					<string>Put steak in pan with thyme on top</string>
+					<string>Baste steak with juices in skillet</string>
+					<string>Cook to desired doneness</string>
+				</array>
+				<key>NutritionFacts</key>
+				<dict/>
+				<key>Media</key>
+				<array/>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>RecipeType</key>
+		<string>Pork</string>
+		<key>RecipeDetails</key>
+		<dict>
+			<key>Recipe</key>
+			<dict>
+				<key>RecipeName</key>
+				<string>Breaded Pork Chops</string>
+				<key>Ingredients</key>
+				<array>
+					<string>1 Pork Chop</string>
+					<string>2 Cup Bread Crumbs</string>
+					<string>1 Egg</string>
+					<string>1 Cup Flour</string>
+				</array>
+				<key>Instructions</key>
+				<array/>
+				<key>NutritionFacts</key>
+				<dict/>
+				<key>Media</key>
+				<array/>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>RecipeType</key>
+		<string>Tofu</string>
+		<key>RecipeDetails</key>
+		<dict>
+			<key>Recipe</key>
+			<dict>
+				<key>RecipeName</key>
+				<string>Agedashi Tofu</string>
+				<key>Ingredients</key>
+				<array/>
+				<key>Instructions</key>
+				<array/>
+				<key>NutritionFacts</key>
+				<dict/>
+				<key>Media</key>
+				<array/>
+			</dict>
+		</dict>
+	</dict>
+	<dict>
+		<key>RecipeType</key>
+		<string>Other</string>
+		<key>RecipeDetails</key>
+		<dict>
+			<key>Recipe</key>
+			<dict>
+				<key>RecipeName</key>
+				<string>Mixed Greens Salad</string>
+				<key>Ingredients</key>
+				<array/>
+				<key>Instructions</key>
+				<array>
+					<string>Open salad bag and enjoy</string>
+				</array>
+				<key>NutritionFacts</key>
+				<dict/>
+				<key>Media</key>
+				<array/>
+			</dict>
+		</dict>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1217" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Ingredient" representedClassName=".Ingredient" syncable="YES" codeGenerationType="category">
+        <attribute name="ingredient" attributeType="String" syncable="YES"/>
+        <relationship name="recipe" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="ingredient" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Instruction" representedClassName=".Instruction" syncable="YES" codeGenerationType="category">
+        <attribute name="instructionStep" attributeType="String" syncable="YES"/>
+        <attribute name="stepIndex" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <relationship name="recipe" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="instructionStep" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="NutritionFact" representedClassName=".NutritionFact" syncable="YES" codeGenerationType="category">
+        <attribute name="amountOf" attributeType="String" syncable="YES"/>
+        <attribute name="nutritionFact" attributeType="String" syncable="YES"/>
+        <attribute name="orderIndex" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <relationship name="recipe" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="macroNutrients" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Picture" representedClassName=".Picture" syncable="YES" codeGenerationType="category">
+        <attribute name="picture" attributeType="Binary" syncable="YES"/>
+        <relationship name="recipe" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="mediaSlide" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Recipe" representedClassName=".Recipe" syncable="YES" codeGenerationType="category">
+        <attribute name="recipeName" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="recipeType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ingredient" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="recipe" inverseEntity="Ingredient" syncable="YES"/>
+        <relationship name="instructionStep" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Instruction" inverseName="recipe" inverseEntity="Instruction" syncable="YES"/>
+        <relationship name="macroNutrients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NutritionFact" inverseName="recipe" inverseEntity="NutritionFact" syncable="YES"/>
+        <relationship name="mediaSlide" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Picture" inverseName="recipe" inverseEntity="Picture" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Ingredient" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="Instruction" positionX="-18" positionY="27" width="128" height="90"/>
+        <element name="NutritionFact" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Picture" positionX="0" positionY="45" width="128" height="75"/>
+        <element name="Recipe" positionX="-54" positionY="-9" width="128" height="135"/>
+    </elements>
+</model>
